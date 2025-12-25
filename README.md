@@ -41,3 +41,15 @@ import processmgr.mgr as mgr
 
 mgr.Process.cpu_count(disableprint=True)
 ```
+
+## Using Rust
+
+Rust is a systems programming language that is known for its safety and performance. It is a good choice for developing UEFI applications because it is a low-level language that allows you to interact with the hardware directly. Rust is also a good choice for developing UEFI applications because it is a statically typed language, which means that it can catch errors at compile time, rather than at runtime. Rust is useful for Pico UEFI because it is a low-level language that allows you to interact with the hardware directly.
+
+```rust
+fn main() {
+    println!("Hello, world!");
+}
+```
+
+You will have to build the Rust file into .efi because Pico does not support running Rust directly, as support is still in development.
